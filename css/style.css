@@ -1,0 +1,15 @@
+nav img{
+    width: 170px;
+}
+nav{
+    background-color:#f58321 ;
+}
+.nav-link{
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+}
+.svg-wave{
+    width: 100%;
+    height: fit-content;
+}
