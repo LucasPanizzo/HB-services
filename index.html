@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HB services</title>
     <link rel="icon" href="./imagenes/logos/logo-sin-sub.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=PT+Sans&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -23,13 +27,13 @@
                         <a class="nav-link activo" aria-current="page" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
+                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                     </li>
                     </ul>
                 </div>
@@ -39,9 +43,35 @@
     <img src="./imagenes/components/waves-header.png" alt="" class="svg-wave">
     <img src="./imagenes/components/waves-footer.png" alt="" class="svg-wave">
     <footer>
-        
+        <div class="row">
+            <!--Footer con sección de contacto,ubicación y redes sociales.-->
+            <!--Utilización de grids de bootstrap para el responsive.-->
+            <section class="footer-contactos col-md">
+                <strong>CONTACTO</strong>
+                <article class="footer--contactos--texto">
+                    <span>Dirección:</span>
+                    <strong>Carril Rodriguez Peña 1802,Maipú. Mendoza</strong>
+                    <strong>J.J. Lastra 5200, Neuquén</strong>
+                    <span>Teléfono:</span>
+                    <strong>0261-241-4346</strong>
+                    <span>EMail</span>
+                    <strong >ventas@hbservices.com.ar</strong> 
+                </article>
+            </section>
+            <section class="footer__mcfly col-md">
+                <img src="./imagenes/logos/logo-full-inverted.png" alt="Logo de McFly" class="footer__mcfly--img">
+                <p>Servicios petroleros</p>
+            </section>
+            <section class="footer__redes col-md">
+                <article class="footer__redes--img">
+                    <div class="fb-page" data-href="https://www.facebook.com/HBservicesMza/" data-tabs="timeline" data-width="" data-height="300" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/HBservicesMza/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HBservicesMza/">HB Services</a></blockquote></div>
+                </article>
+            </section>
+        </div>
+        <p class="footer__derechos">© 2022 HB Services. Todos los derechos reservados.</p>
     </footer>
-   
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v15.0" nonce="wc9pcGLX"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
