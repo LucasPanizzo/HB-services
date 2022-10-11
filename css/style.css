@@ -27,11 +27,12 @@ nav img{
 nav{
     background-color:#f58321 ;
     position: relative;
+    border-bottom: 5px black solid;
 }
 .nav-link{
     position: relative;
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     font-family: 'PT Sans Caption', sans-serif;
     margin: 0 5px 0 5px;
@@ -73,13 +74,9 @@ nav{
       width: 0;
   }
 }
-.svg-wave{
-    width: 100%;
-    display: block;
-}
-.footer{
+footer{
     background-color: #f58321;
-    position: relative;
+    border-top: 5px solid black;
 }
 .footer-hb {
     margin-top: 10px;
