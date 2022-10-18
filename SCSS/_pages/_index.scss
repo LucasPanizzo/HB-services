@@ -2,7 +2,7 @@
     &-banner{
         width: 100%;
         border: 1px solid black;
-        height: 30vw;
+        height: 40vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -11,10 +11,14 @@
     }
     &-empresa{
         padding-bottom: 50px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid map-get($paleta,negro);
         display: flex;
-        flex-direction: row;
+        flex-direction: column-reverse;
         margin-top: 20px;
+
+        @include desktop{
+            flex-direction: row;
+        }
         &-brand{
             display: flex;
             justify-content: center;
@@ -22,7 +26,173 @@
             & img{
                 width: 60%;
                 border: 1px solid black;
+                margin-top: 15px;
+                @include desktop{
+                    margin-top: 0;
+                }
             }
+        }
+        &-hb{
+            & h1{
+                font-family: map-get($fuentes, main);
+                font-weight: 600;
+                font-size: 2rem;
+                margin-bottom: 7px;
+            }
+            & p{
+                font-family: map-get($fuentes, textos );
+                font-size: 1.2rem;
+            }
+            & n{
+                font-weight: 600;
+                background-color: map-get($paleta, main);
+            }
+        }
+    }
+}
+.services{
+    margin-bottom: 50px;
+    margin-top: 35px;
+    position: relative;
+    &-background{
+            background-image: url(../../imagenes/components/services.jpg);
+            width: 100%;
+            height: 300px;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-position: center;
+            @include desktop{
+                height: 400px;
+            }
+
+    }
+    &-layout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        background-color: hsla(28, 91%, 55%, 0.20);
+        transition: all 0.2s linear;
+        &:hover{
+            background-color: hsla(28, 91%, 55%, 0.15);
+                backdrop-filter: blur(2px) contrast(115%) grayscale(10%) sepia(9%);
+        }
+        & h2{
+            width: fit-content;
+            font-size: 1.9rem;
+            font-family: map-get($fuentes, main),serif;
+            color: map-get($paleta,main);
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 5px;
+            border-radius: .5rem;
+            margin-left: 10px;
+            font-weight: 600;
+            @include desktop{
+                margin-left: 25px;
+            }
+        }
+        & a{
+            font-family: map-get($fuentes, textos),serif;
+            color: map-get($paleta, main);
+            position: absolute;
+            bottom: 0;
+            align-self: center;
+            font-size: 1.2rem;
+            margin: 20px;
+            align-self: center;
+            padding: 17px;
+            transition: all 0.2s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.clients{
+    margin-bottom:35px;
+    & h2{
+        font-family: map-get($fuentes, main);
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 7px;
+        text-align: center;
+        padding-top: 50px;
+        border-top: 1px solid black;
+    }
+    &-layout{
+        width: 100%;
+        margin-top: 30px;
+        height: 100px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        overflow: scroll;
+        @include desktop{
+            overflow: hidden;
+            justify-content: space-around;
+        }
+        & img{
+            height: 100%;
+            padding: 10px;
+            max-width: 250px;
+            transition: all 0.5s linear;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+.proyects{
+    margin-bottom:35px;
+    & h2{
+        font-family: map-get($fuentes, main);
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 7px;
+        text-align: center;
+        padding-top: 50px;
+        border-top: 1px solid black;
+    }
+    &-layout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include tablet{
+            flex-direction: row;
+        }
+        @include desktop{
+            flex-direction: row;
+        }
+    }
+    &-card{
+        width: 300px;
+        height: 340px;
+        border: 1px solid map-get($paleta, main);
+        border-radius: .5rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        transition: all 0.25s linear;
+        & img{
+            align-self: center;
+            width: 100%;
+        }
+        & h6{
+            font-family: map-get($fuentes, textos), sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        & p{
+            font-family: map-get($fuentes, textosS), sans-serif;
+            font-size: 1.2rem;
+            margin-left: 10px;
+        }
+        &:hover{
+            transform: scale(1.1);
         }
     }
 }
