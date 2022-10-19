@@ -1,0 +1,54 @@
+.services{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    & h2{
+        font-family: map-get($fuentes, main);
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 7px;
+    }
+    &-card{
+        border: 2px solid map-get($paleta,main );
+        margin: 15px;
+        border-radius: .5rem;
+        &-text{
+            margin-top: 25px;
+            & h4{
+                font-family: map-get($fuentes, textos ),sans-serif;
+                font-weight: 600;
+                font-size: 1.4rem;
+            }
+            & p{
+                font-family: map-get($fuentes, textosS ),sans-serif;
+                font-size: 1.1rem;
+            }
+            & ul{
+                & li{
+                    font-family: map-get($fuentes, textosS ),sans-serif;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        &-img{
+            & img{
+            padding: 10px 0px 10px 0px;
+            border-radius: 1rem;
+            width: 100%;
+            }
+        }
+    }
+}
+.reverse{
+    @include desktop{
+        flex-direction: row-reverse;
+    }
+    & div{
+        @include desktop{
+        text-align: end;
+        }
+    }
+}
